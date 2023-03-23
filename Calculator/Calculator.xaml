@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.Calculator"
+             Title="Calculator">
+    <VerticalStackLayout>
+        <Label 
+            Text="KALKULYATOR!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+                Text="7"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Fill"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-600,200,0,0"/>
+        <Button
+                Text="8"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Fill"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-420,-80,0,0"/>
+        <Button
+                Text="9"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Fill"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-240,-80,0,0"/>
+        <Button
+                Text="4"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-600,10,0,0"/>
+        <Button
+                Text="5"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-420,-80,0,0"/>
+        <Button
+                Text="6"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-240,-80,0,0"/>
+        <Button
+                Text="1"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-600,10,0,0"/>
+        <Button
+                Text="2"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-420,-80,0,0"/>
+        <Button
+                Text="3"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-240,-80,0,0"/>
+        <Button
+                Text="+/-"
+                Clicked="OnSwapClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80"
+                Margin="-600,10,0,0"/>
+        <Button
+                Text="0"
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-420,-80,0,0"/>
+        <Button
+                Text=","
+                Clicked="OnNumberClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-240,-80,0,0"/>
+        <Button
+                Text="1/x"
+                Clicked="OnonexClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-600,-440,0,0"/>
+        <Button
+                Text="x^2"
+                Clicked="OnxpowClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-420,-80,0,0"/>
+        <Button
+                Text="sqrt(x)"
+                Clicked="OnsqrtClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-240,-80,0,0"/>
+        <Button
+                Text="S"
+                Clicked="OnRadiusClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-600,-170,0,0"/>
+        <Button
+                Text="CE"
+                Clicked="OnCEClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-420,-80,0,0"/>
+        <Button
+                Text="C"
+                Clicked="OnClear"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-240,-80,0,0"/>
+        <Button
+                Text="Back"
+                Clicked="Backspace"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-60,-80,0,0"/>
+        <Button
+                Text="/"
+                Clicked="OnOperatorClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-60,10,0,0"/>
+        <Button
+                Text="*"
+                Clicked="OnOperatorClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-60,10,0,0"/>
+        <Button
+                Text="-"
+                Clicked="OnOperatorClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-60,10,0,0"/>
+        <Button
+                Text="+"
+                Clicked="OnOperatorClicked"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Salmon"
+                WidthRequest="80" HeightRequest="80" Margin="-60,10,0,0"/>
+        <Button
+                Text="="
+                Clicked="OnCalculate"
+                HorizontalOptions="Center"
+                BorderColor="Black"
+                BackgroundColor="Aqua"
+                WidthRequest="80" HeightRequest="80" Margin="-60,10,0,0"/>
+        <Label
+            x:Name="result"
+            Text="0"
+            FontSize="32"
+            HorizontalOptions="Center"
+            Margin="300,-540,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>
+    

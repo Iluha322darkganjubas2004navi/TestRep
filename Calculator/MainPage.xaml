@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="LoadText"
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="StartButton"
+                Text="Start"
+                Clicked="OnStartClicked"
+                Margin="-100,10,0,0" WidthRequest="80" FontSize="16"/>
+            <Button
+                x:Name="CancelButton"
+                Text="Cancel"
+                Clicked="OnCancelClicked"
+                Margin="120,-69,0,0" WidthRequest="80" FontSize="16"/>
+            <Button
+                x:Name="MoveToCalc"
+                Text="Click To Calculate"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            <ProgressBar x:Name="ProgressBarIndicator"
+                         WidthRequest="600"
+                         Progress="0.0"
+                         ScaleY="2"/>
+            <Label x:Name="ProgressResult"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
